@@ -1,0 +1,10 @@
+{
+    "name": "hexlet/code",
+    "authors": [
+        {
+            "name": "pzproger",
+            "email": "pzproger@gmail.com"
+        }
+    ],
+    "require": {}
+}
