@@ -1,10 +1,12 @@
 {
     "name": "hexlet/code",
+    "description": "brain-games",
     "authors": [
         {
             "name": "pzproger",
             "email": "pzproger@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": ["bin/brain-games"]
 }
