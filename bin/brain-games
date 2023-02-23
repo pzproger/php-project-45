@@ -1,4 +1,14 @@
 #!/usr/bin/env php
-echo "php bin/brain-games.php\n";
-echo "Welcome to the Brain Games!";
+
+<?php
+
+include __DIR__ . '/../vendor/autoload.php';
+
+use function BrainGames\Cli\welcome;
+//use BrainGames\Cli\Hello;
+
+welcome();
+//Hello::welcome();
+
+
 
