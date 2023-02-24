@@ -22,4 +22,3 @@ function welcome(): void
 //        line("Hello, %s!", $name);
 //    }
 //}
-

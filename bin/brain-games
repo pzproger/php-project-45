@@ -9,6 +9,3 @@ use function BrainGames\Cli\welcome;
 
 welcome();
 //Hello::welcome();
-
-
-
