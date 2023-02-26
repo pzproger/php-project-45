@@ -18,10 +18,9 @@ class GameEven
 
         for ($i = 1; $i < 4; $i++) {
             $number = self::generateNumber();
-            line('Question:' . $number);
+            line('Question: ' . $number);
 
             $answer = prompt('Your answer:');
-//            line("Hello, %s!", $answer);
 
             if (
                 $number % 2 === 0 && $answer === 'yes'
