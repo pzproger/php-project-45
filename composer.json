@@ -1,6 +1,7 @@
 {
     "name": "hexlet/code",
     "description": "brain-games",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "pzproger",
@@ -11,11 +12,13 @@
         "wp-cli/php-cli-tools": "^0.11.17"
     },
     "bin": [
-        "bin/brain-games.php"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/Even.php"
         ]
     },
     "require-dev": {
