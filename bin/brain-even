@@ -6,4 +6,4 @@ include __DIR__ . '/../vendor/autoload.php';
 
 use BrainGames\Even\GameEven;
 
-GameEven::gameEven();
+(new GameEven)->gameEven();
