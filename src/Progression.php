@@ -1,11 +1,11 @@
 <?php
 
-namespace BrainGames\Gcd;
+namespace BrainGames\Progression;
 
 use function cli\line;
 use function cli\prompt;
 
-class GameGcd
+class GameProgression
 {
     public function __construct()
     {
@@ -22,7 +22,7 @@ class GameGcd
         return $name;
     }
 
-    private function generateNumber(int $maxNum = 100): int
+    private function generateNumber(int $maxNum = 99): int
     {
         return rand(1, $maxNum);
     }
@@ -31,7 +31,7 @@ class GameGcd
     {
         $name = self::greeting();
 
-        line('What is the result of the expression?');
+        line('What number is missing in the progression?');
 
         for ($i = 1; $i < 4; $i++) {
             $exData = self::getExpresion();
@@ -53,12 +53,20 @@ class GameGcd
 
     private function getExpresion(): array
     {
-        $number1 = self::generateNumber();
-        $number2 = self::generateNumber();
+        $beginProgression = self::generateNumber();
+        $stepProgression = self::generateNumber(10);
 
-        $exString = "{$number1} {$number2}";
-        // TODO need extension gmp
-        $exResult = gmp_gcd($number1, $number2);
+        $arProgression[] =  $beginProgression;
+        $i = 0;
+        while ($i < 9) {
+            $arProgression[] =  $arProgression[count($arProgression) - 1] + $stepProgression;
+            $i++;
+        }
+
+        $hiddenNumber = $arProgression[array_rand($arProgression)];
+        $arProgression[array_search($hiddenNumber, $arProgression)] = '..';
+        $exString = implode(' ', $arProgression);
+        $exResult = $hiddenNumber;
 
         return [
             'exString' => $exString,
