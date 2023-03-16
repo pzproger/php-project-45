@@ -4,4 +4,5 @@
 - <a href="https://asciinema.org/a/1pdbEL8w9r3ulaoJ8jKB0Kwd5">brain-even asciinema</a>
 - <a href="https://asciinema.org/a/n9qOwApkdNeq2paWyOvynYR0H">brain-calc asciinema</a>
 - <a href="https://asciinema.org/a/5xSltkgpFMonzi23M3eZNEXvB">brain-gcd asciinema</a>
-- <a href="https://asciinema.org/a/6BiiFg4yeSJzN3YTu6d1k38Ua">brain-gcd progression</a>
+- <a href="https://asciinema.org/a/6BiiFg4yeSJzN3YTu6d1k38Ua">brain-progression asciinema</a>
+- <a href="https://asciinema.org/a/UhsE3e5WZh93PY5SZ4X1eEMgD">brain-prime asciinema</a>
