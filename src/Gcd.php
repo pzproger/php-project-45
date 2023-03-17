@@ -44,7 +44,7 @@ class GameGcd
             ) {
                 $i == 3 ? line("Congratulations, {$name}!") : line("Correct!");
             } else {
-                line("{$answer} is wrong answer ;(. Correct answer was {$exData['exResult']}.");
+                line("'{$answer}' is wrong answer ;(. Correct answer was '{$exData['exResult']}'.");
                 line("Let's try again, {$name}!");
                 break;
             }
