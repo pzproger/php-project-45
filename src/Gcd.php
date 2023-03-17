@@ -31,7 +31,7 @@ class GameGcd
     {
         $name = self::greeting();
 
-        line('What is the result of the expression?');
+        line('Find the greatest common divisor of given numbers.');
 
         for ($i = 1; $i < 4; $i++) {
             $exData = self::getExpresion();
