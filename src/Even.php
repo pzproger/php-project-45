@@ -32,7 +32,6 @@ class GameEven
                 break;
             }
         }
-
     }
 
     private function generateNumber(int $maxNum = 100): int
