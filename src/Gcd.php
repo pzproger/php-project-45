@@ -58,7 +58,16 @@ class GameGcd
 
         $exString = "{$number1} {$number2}";
         // TODO need extension gmp
-        $exResult = gmp_gcd($number1, $number2);
+//        $exResult = gmp_gcd($number1, $number2);
+        // simple algorithm
+        $exResult = 1;
+        $minNumber = min($number1, $number2);
+        for ($i = $minNumber - 1; $i > 0; $i--) {
+            if ($number1 % $i === 0 && $number2 === 0) {
+                $exResult = $i;
+                break;
+            }
+        }
 
         return [
             'exString' => $exString,
