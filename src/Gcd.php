@@ -62,9 +62,9 @@ class GameGcd
         // simple algorithm
         $exResult = 1;
         $minNumber = min($number1, $number2);
-        
+
         for ($i = $minNumber - 1; $i > 1; $i--) {
-            if ($number1 % $i == 0 && $number2 == 0) {
+            if ($number1 % $i === 0 && $number2 % $i === 0) {
                 $exResult = $i;
                 break;
             }
