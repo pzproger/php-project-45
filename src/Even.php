@@ -20,7 +20,7 @@ class GameEven
             $number = self::generateNumber();
             line('Question: ' . $number);
 
-            $answer = prompt('Your answer:');
+            $answer = prompt('Your answer');
 
             if (
                 $number % 2 === 0 && $answer === 'yes'

@@ -37,7 +37,7 @@ class GameGcd
             $exData = self::getExpresion();
             line('Question: ' . $exData['exString']);
 
-            $answer = prompt('Your answer:');
+            $answer = prompt('Your answer');
 
             if (
                 $answer == $exData['exResult']
@@ -62,8 +62,9 @@ class GameGcd
         // simple algorithm
         $exResult = 1;
         $minNumber = min($number1, $number2);
-        for ($i = $minNumber - 1; $i > 0; $i--) {
-            if ($number1 % $i === 0 && $number2 === 0) {
+        
+        for ($i = $minNumber - 1; $i > 1; $i--) {
+            if ($number1 % $i == 0 && $number2 == 0) {
                 $exResult = $i;
                 break;
             }

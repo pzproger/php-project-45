@@ -37,7 +37,7 @@ class GameProgression
             $exData = self::getExpresion();
             line('Question: ' . $exData['exString']);
 
-            $answer = prompt('Your answer:');
+            $answer = prompt('Your answer');
 
             if (
                 $answer == $exData['exResult']
