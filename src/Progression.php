@@ -53,20 +53,24 @@ class GameProgression
 
     private function getExpresion(): array
     {
-        $beginProgression = self::generateNumber() ? self::generateNumber() : 1;
+        $exString = '';
+        $exResult = 0;
+        $beginProgression = self::generateNumber();
         $stepProgression = self::generateNumber(10);
 
-        $arProgression[] =  $beginProgression;
-        $i = 0;
-        while ($i < 9) {
-            $arProgression[] =  $arProgression[count($arProgression) - 1] + $stepProgression;
-            $i++;
-        }
+        if ($beginProgression > 0) {
+            $arProgression[] = $beginProgression;
+            $i = 0;
+            while ($i < 9) {
+                $arProgression[] = $arProgression[count($arProgression) - 1] + $stepProgression;
+                $i++;
+            }
 
-        $hiddenNumber = $arProgression[array_rand($arProgression)];
-        $arProgression[array_search($hiddenNumber, $arProgression, true)] = '..';
-        $exString = implode(' ', $arProgression);
-        $exResult = $hiddenNumber;
+            $hiddenNumber = $arProgression[array_rand($arProgression)];
+            $arProgression[array_search($hiddenNumber, $arProgression, true)] = '..';
+            $exString = implode(' ', $arProgression);
+            $exResult = $hiddenNumber;
+        }
 
         return [
             'exString' => $exString,
