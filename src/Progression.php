@@ -53,7 +53,7 @@ class GameProgression
 
     private function getExpresion(): array
     {
-        $beginProgression = self::generateNumber();
+        $beginProgression = self::generateNumber() ?: 1;
         $stepProgression = self::generateNumber(10);
 
         $arProgression[] =  $beginProgression;
