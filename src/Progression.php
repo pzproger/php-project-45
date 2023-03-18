@@ -64,7 +64,7 @@ class GameProgression
         }
 
         $hiddenNumber = $arProgression[array_rand($arProgression)];
-        $arProgression[array_search($hiddenNumber, $arProgression)] = '..';
+        $arProgression[array_search($hiddenNumber, $arProgression, true)] = '..';
         $exString = implode(' ', $arProgression);
         $exResult = $hiddenNumber;
 

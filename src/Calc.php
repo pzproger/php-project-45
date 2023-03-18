@@ -65,6 +65,7 @@ class GameCalc
         $symbol = self::getSymbol();
         $exString = "{$number1} {$symbol} {$number2}";
 
+        $exResult = 0;
         switch ($symbol) {
             case '+':
                 $exResult = $number1 + $number2;
