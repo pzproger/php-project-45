@@ -57,13 +57,12 @@ class GamePrime
 
         $isPrime = true;
 
-        for ($i = $number - 1; $i > 1; $i--) {
-            if ($number % $i == 0) {
-                $isPrime = false;
+        if ($number > 1) {
+            for ($i = $number - 1; $i > 1; $i--) {
+                if ($number % $i == 0) {
+                    $isPrime = false;
+                }
             }
-        }
-        if ($number == 1) {
-            $isPrime = true;
         }
 
         $exResult = $isPrime ? 'yes' : 'no';
