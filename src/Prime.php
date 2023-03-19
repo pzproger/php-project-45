@@ -62,6 +62,10 @@ class GamePrime
                 $isPrime = false;
             }
         }
+        
+        if ($number == 1) {
+            $isPrime = true;
+        }
 
         $exResult = $isPrime ? 'yes' : 'no';
         $exString = $number;
