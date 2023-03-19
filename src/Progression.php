@@ -58,7 +58,6 @@ class GameProgression
         $beginProgression = self::generateNumber();
         $stepProgression = self::generateNumber(10);
         $arProgression = [];
-        
         if ($beginProgression > 0) {
             $arProgression[] = $beginProgression;
             $i = 0;
