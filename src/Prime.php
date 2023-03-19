@@ -62,7 +62,6 @@ class GamePrime
                 $isPrime = false;
             }
         }
-        
         if ($number == 1) {
             $isPrime = true;
         }
