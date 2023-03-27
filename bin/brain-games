@@ -4,6 +4,6 @@
 
 include __DIR__ . '/../vendor/autoload.php';
 
-use BrainGames\Cli\Hello;
+use function BrainGames\Cli\greeting;
 
-Hello::greeting();
+greeting();

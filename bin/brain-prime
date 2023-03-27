@@ -4,6 +4,6 @@
 
 include __DIR__ . "/../vendor/autoload.php";
 
-use BrainGames\Prime\GamePrime;
+use function BrainGames\Prime\startGame;
 
-(new GamePrime);
+startGame();
